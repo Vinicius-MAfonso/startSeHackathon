@@ -17,53 +17,65 @@
   list-style: none;
   box-sizing: border-box;
 }
-header{
-  position: relative;
-  height: 100vh;
-  background-image: linear-gradient(to bottom, var(--cor-1),var(--cor-2),var(--cor-3),var(--cor-4),var(--cor-5));
-}
 header a{
   color: whitesmoke;
 }
-nav{
-  position: relative;
-  width: 100%;
+header{
+  height: 100vh;
+  background-image: linear-gradient(to bottom, var(--cor-1),var(--cor-2),var(--cor-3),var(--cor-4),var(--cor-5));
 }
-.logo{
-  position: absolute;
-  top: 35%;
-  left: 5%;
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 14%;
+  width: 100%;
+  align-items: center;
+  padding: 3%;
+}
+#logo{
   font: var(--fonte-destaque);
   color: white;
+  font-size: 2em;
 }
 nav ul{
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  padding: 3%;
 }
-nav li{
-  list-style: none;
-  padding: 4%;
+nav ul li{
+  padding: 3%;
   font: var(--fonte-destaque);
   text-transform: uppercase;
   color: whitesmoke;
 }
+nav ul li a{
+  padding: 5%;
+  transition: 0.5s;
+}
+nav ul li a:hover{
+  background-color: #004757d8;
+  transition: 0.5s;
+  border-radius: 2px;
+
+}
+/* Container com as frases de destaque */
 .container-header{
+  position: absolute;
   top: 30%;
   left: 10%;
-  position: absolute;
   max-width: 10%;
-  min-width: 40%;
+  min-width: 30%;
 }
 .container-header p{
   color: white;
   font: var(--fonte-paragrafo);
   font-size: 2em;
   text-align: left;
+  min-width: 30%;
 }
 .container-header .btn-subscribe{
-
   max-width: 60%;
   background-image: linear-gradient(to right, var(--cor-1),var(--cor-2),transparent);
+  font: var(--fonte-destaque);  
   padding: 1%;
-  font: var(--fonte-destaque);
 }
