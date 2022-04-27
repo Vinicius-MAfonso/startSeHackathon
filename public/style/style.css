@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+:root{
+  --cor-1:#00A0C3;
+  --cor-2:#00b9b9;
+  --cor-3:#00cdb4;
+  --cor-4:#00dfae;
+  --cor-5:#01efad;
+  --fonte-destaque:1.3em 'Poppins', Open sans-serif;
+  --fonte-paragrafo:1.3em 'Open Sans', sans-serif;
+}
+/* Configurações globais */
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+header{
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, var(--cor-1),var(--cor-2),var(--cor-3),var(--cor-4),var(--cor-5));
+}
+header a{
+  color: whitesmoke;
+}
+nav{
+  position: relative;
+  width: 100%;
+}
+.logo{
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  font: var(--fonte-destaque);
+  color: white;
+}
+nav ul{
+  display: flex;
+  justify-content: end;
+}
+nav li{
+  list-style: none;
+  padding: 4%;
+  font: var(--fonte-destaque);
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+.container-header{
+  top: 30%;
+  left: 10%;
+  position: absolute;
+  max-width: 10%;
+  min-width: 40%;
+}
+.container-header p{
+  color: white;
+  font: var(--fonte-paragrafo);
+  font-size: 2em;
+  text-align: left;
+}
+.container-header .btn-subscribe{
+
+  max-width: 60%;
+  background-image: linear-gradient(to right, var(--cor-1),var(--cor-2),transparent);
+  padding: 1%;
+  font: var(--fonte-destaque);
+}
