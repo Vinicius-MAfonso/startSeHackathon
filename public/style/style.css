@@ -17,13 +17,14 @@
   list-style: none;
   box-sizing: border-box;
 }
-header a{
-  color: whitesmoke;
-}
 header{
   height: 100vh;
   background-image: linear-gradient(to bottom, var(--cor-1),var(--cor-2),var(--cor-3),var(--cor-4),var(--cor-5));
 }
+header a{
+  color: whitesmoke;
+}
+/* Logo + Navegação */
 nav{
   display: flex;
   justify-content: space-between;
@@ -37,10 +38,14 @@ nav{
   color: white;
   font-size: 2em;
 }
+/* Navegação */
 nav ul{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   display: flex;
   justify-content: space-between;
-  padding: 3%;
+  padding: 7%;
 }
 nav ul li{
   padding: 3%;
@@ -56,7 +61,6 @@ nav ul li a:hover{
   background-color: #004757d8;
   transition: 0.5s;
   border-radius: 2px;
-
 }
 /* Container com as frases de destaque */
 .container-header{
