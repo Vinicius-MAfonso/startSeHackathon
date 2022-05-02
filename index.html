@@ -1,66 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MeuDin!</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link
-      rel="stylesheet"
-      media="(max-width:900px)"
-      href="style/style_(900w).css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <label for="" id="logo"><h1>MeuDin!</h1></label>
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="servicos">Serviços</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-        <button id="btn-hamburguer">Click</button>
-      </nav>
+<html lang="en">
 
-      <div class="container-header">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet
-          magnam optio assumenda iste non, est nihil et. Blanditiis eveniet
-          illum
-        </p>
-        <a href="#">
-          <div class="btn-subscribe">Inscreva-Se</div>
-        </a>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <title>MeuDin!</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class = "logo"><a href="#">MeuDin!</a></div>
+            <div class = "toggle__menu" id="toggle-menu">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+            <ul class="nav__list " id="nav-menu">
+                <div class="close__menu" id="close-menu">
+                    <i class="bx bx-x"></i>
+                </div>
+                <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
+                <li class="nav__item dropdown"><a href="#" class="nav__link dropdown__link">Serviços<i class='bx bxs-chevron-down dropdown__icon'></i></a>
+                
+                <div class="megamenu">
+                    <ul class="content">
+                        <li class="megamenu__item header__mnegamenu"></li>
+                        <li class="megamenu__item">
+                            <div class="menu__icon">
+
+                            </div>
+                            <div class="megamenu_link">
+                                <a href="#">Algum servico</a>
+                                <p>Fazemos isso</p>
+                            </div>
+                        </li>
+                        <li class="megamenu__item">
+                            <div class="menu__icon">
+
+                            </div>
+                            <div class="megamenu_link">
+                                <a href="#">Algum servico 2</a>
+                                <p>Fazemos isso 2</p>
+                            </div>
+                        </li>
+                        <li class="megamenu__item">
+                            <div class="menu__icon">
+
+                            </div>
+                            <div class="megamenu_link">
+                                <a href="#">Fazemos isso 3</a>
+                                <p>Fazemos isso 3 </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="content">
+                        <li class="megamenu__item header__mnegamenu"></li>
+                        <li class="megamenu__item">
+                            <div class="menu__icon">
+
+                            </div>
+                            <div class="megamenu_link">
+                                <a href="#">Algum servico</a>
+                                <p>Fazemos isso</p>
+                            </div>
+                        </li>
+                        <li class="megamenu__item">
+                            <div class="menu__icon">
+
+                            </div>
+                            <div class="megamenu_link">
+                                <a href="#">Algum servico 2</a>
+                                <p>Fazemos isso 2</p>
+                            </div>
+                        </li>
+                        <li class="megamenu__item">
+                            <div class="menu__icon">
+
+                            </div>
+                            <div class="megamenu_link">
+                                <a href="#">Fazemos isso 3</a>
+                                <p>Fazemos isso 3 </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="content">
+                        <li class="megamenu__item header__mnegamenu"></li>
+                        <li class="megamenu__item">
+                            <div class="menu__icon">
+
+                            </div>
+                            <div class="megamenu_link">
+                                <a href="#">Algum servico</a>
+                                <p>Fazemos isso</p>
+                            </div>
+                        </li>
+                        <li class="megamenu__item">
+                            <div class="menu__icon">
+
+                            </div>
+                            <div class="megamenu_link">
+                                <a href="#">Algum servico 2</a>
+                                <p>Fazemos isso 2</p>
+                            </div>
+                        </li>
+                        <li class="megamenu__item">
+                            <div class="menu__icon">
+
+                            </div>
+                            <div class="megamenu_link">
+                                <a href="#">Fazemos isso 3</a>
+                                <p>Fazemos isso 3 </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link">Sobre</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contato</a></li>
+
+            </ul>
+        </nav>
+
     </header>
-    <main>
-      <article id="servicos">
-        <h1>Serviços</h1>
-        <h2>Serviço 1</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          inventore soluta cupiditate accusantium numquam dolore sit odio harum
-          consectetur quisquam! Tempore officia error et quibusdam corporis
-          laborum mollitia harum ratione?
-        </p>
-        <h2>Serviço 2</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          inventore soluta cupiditate accusantium numquam dolore sit odio harum
-          consectetur quisquam! Tempore officia error et quibusdam corporis
-          laborum mollitia harum ratione?
-        </p>
-        <h2>Serviço 3</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          inventore soluta cupiditate accusantium numquam dolore sit odio harum
-          consectetur quisquam! Tempore officia error et quibusdam corporis
-          laborum mollitia harum ratione?
-        </p>
-      </article>
-    </main>
-  </body>
+
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
