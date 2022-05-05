@@ -7,126 +7,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <title>MeuDin!</title>
 </head>
 
 <body>
-
-    <header>
-        <nav>
-            <div class = "logo"><a href="#">MeuDin!</a></div>
-            <div class = "toggle__menu" id="toggle-menu">
-                <i class="bx bx-grid-alt"></i>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="#">MeuDin!</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">MeuDin!</span>
+              <i class='bx bx-x' ></i>
             </div>
-            <ul class="nav__list " id="nav-menu">
-                <div class="close__menu" id="close-menu">
-                    <i class="bx bx-x"></i>
-                </div>
-                <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
-                <li class="nav__item dropdown"><a href="#" class="nav__link dropdown__link">Serviços<i class='bx bxs-chevron-down dropdown__icon'></i></a>
-                
-                <div class="megamenu">
-                    <ul class="content">
-                        <li class="megamenu__item header__mnegamenu"></li>
-                        <li class="megamenu__item">
-                            <div class="menu__icon">
-
-                            </div>
-                            <div class="megamenu_link">
-                                <a href="#">Algum servico</a>
-                                <p>Fazemos isso</p>
-                            </div>
-                        </li>
-                        <li class="megamenu__item">
-                            <div class="menu__icon">
-
-                            </div>
-                            <div class="megamenu_link">
-                                <a href="#">Algum servico 2</a>
-                                <p>Fazemos isso 2</p>
-                            </div>
-                        </li>
-                        <li class="megamenu__item">
-                            <div class="menu__icon">
-
-                            </div>
-                            <div class="megamenu_link">
-                                <a href="#">Fazemos isso 3</a>
-                                <p>Fazemos isso 3 </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="content">
-                        <li class="megamenu__item header__mnegamenu"></li>
-                        <li class="megamenu__item">
-                            <div class="menu__icon">
-
-                            </div>
-                            <div class="megamenu_link">
-                                <a href="#">Algum servico</a>
-                                <p>Fazemos isso</p>
-                            </div>
-                        </li>
-                        <li class="megamenu__item">
-                            <div class="menu__icon">
-
-                            </div>
-                            <div class="megamenu_link">
-                                <a href="#">Algum servico 2</a>
-                                <p>Fazemos isso 2</p>
-                            </div>
-                        </li>
-                        <li class="megamenu__item">
-                            <div class="menu__icon">
-
-                            </div>
-                            <div class="megamenu_link">
-                                <a href="#">Fazemos isso 3</a>
-                                <p>Fazemos isso 3 </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="content">
-                        <li class="megamenu__item header__mnegamenu"></li>
-                        <li class="megamenu__item">
-                            <div class="menu__icon">
-
-                            </div>
-                            <div class="megamenu_link">
-                                <a href="#">Algum servico</a>
-                                <p>Fazemos isso</p>
-                            </div>
-                        </li>
-                        <li class="megamenu__item">
-                            <div class="menu__icon">
-
-                            </div>
-                            <div class="megamenu_link">
-                                <a href="#">Algum servico 2</a>
-                                <p>Fazemos isso 2</p>
-                            </div>
-                        </li>
-                        <li class="megamenu__item">
-                            <div class="menu__icon">
-
-                            </div>
-                            <div class="megamenu_link">
-                                <a href="#">Fazemos isso 3</a>
-                                <p>Fazemos isso 3 </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                
-                </li>
-                <li class="nav__item"><a href="#" class="nav__link">Sobre</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contato</a></li>
-
+            <ul class="links">
+              <li><a href="#">INICIO</a></li>
+              <li>
+                <a href="#">SERVIÇOS</a>
+                <i class='bx bxs-chevron-down servico-arrow arrow  '></i>
+                <ul class="servico-sub-menu sub-menu">
+                  <li><a href="#">Teste</a></li>
+                  <li><a href="#">Teste</a></li>
+                  <li><a href="#">Teste</a></li>
+                </ul>
+              </li>
+              <li><a href="#">SOBRE</a></li>
+              <li><a href="#">CONTATO</a></li>
             </ul>
-        </nav>
-
-    </header>
-
+          </div>
+        </div>
+      </nav>
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+            <h2>Sobre nós</h2>
+            <a href="#">Algo</a> 
+            <a href="#">Algo</a>
+            <a href="#">Algo</a> 
+            </div>
+            <div class="footer__link--items">
+            <h2>Recursos</h2>
+            <a href="#">Algo</a> 
+            <a href="#">Algo</a>
+            <a href="#">Algo</a>
+            </div>
+        </div>
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+            <h2>Media</h2>
+            <a href="#">Algo</a> 
+            <a href="#">Algo</a>
+            <a href="#">Algo</a>
+            </div>
+            <div class="footer__link--items">
+            <h2>Desenvolvedores</h2>
+            <a href="#">Algo</a> 
+            <a href="#">Algo</a>
+            <a href="#">Algo</a> 
+            </div>
+        </div>
+        </div>
+        <section class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+            <a href="/" id="footer__logo">MeuDin!</a>
+            </div>
+            <p class="website__rights">© MeuDin! 2020. All rights reserved</p>
+            <div class="social__icons">
+            <a href="#" class="social__icon--link" target="_blank"
+                ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="social__icon--link"
+                ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="social__icon--link"
+                ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="social__icon--link"
+                ><i class="fab fa-twitter"></i
+            ></a>
+            </div>
+        </div>
+        </section>
+    </div>
     <!-- main js -->
     <script src="./assets/js/main.js"></script>
 </body>
