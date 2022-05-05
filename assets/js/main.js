@@ -1,11 +1,22 @@
-const navMenu =document.getElementById('nav-menu'),
-toggleMenu= document.getElementById('toggle-menu'),
-closeMenu = document.getElementById('close-menu')
-
-toggleMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('show__menu')
-})
-
-closeMenu.addEventListener('click', () => {
-    navMenu.classList.remove('show__menu')
-})
+// sidebar open close js code
+  let navLinks = document.querySelector(".nav-links");
+  let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+  let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+  menuOpenBtn.onclick = function() {
+  navLinks.style.left = "0";
+  }
+  menuCloseBtn.onclick = function() {
+  navLinks.style.left = "-100%";
+  }
+  
+  
+  // sidebar submenu open close js code
+  let servicoArrow = document.querySelector(".servico-arrow");
+  servicoArrow.onclick = function() {
+   navLinks.classList.toggle("show1");
+  }
+  let jsArrow = document.querySelector(".js-arrow");
+  jsArrow.onclick = function() {
+   navLinks.classList.toggle("show2");
+  }
+  
