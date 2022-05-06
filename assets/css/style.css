@@ -105,22 +105,28 @@ nav .navbar .links li:hover .js-sub-menu{
     display: none;
 }
 .btnsignup{
+    background-color: transparent;
     width: 150px;
     height: 45px;
     border-radius: 45px;
+    font-size: 15px;
+    font-weight: 500;
     cursor: pointer;
-    border: none;
+    /* border: none; */
     text-decoration: uppercase;
     letter-spacing: 2px;
-    font-weight: bold;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3 ease;
+    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); */
+    transition: all 0.3 ease; 
+    transition: 0.7s;
+    border: 2px solid transparent;
+    color: white;
 }
 .btnsignup:hover{
-    background: #000;
+    /* background: #005E4A;*/
     transform: translate(-7px);
-    color: #fff;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    /*color: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); */
+    border: 2px solid white;
 }
 
 /*Responsive NavBar*/
