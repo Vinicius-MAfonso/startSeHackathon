@@ -104,13 +104,23 @@ nav .navbar .links li:hover .js-sub-menu{
 .navbar .bx-menu{
     display: none;
 }
-.btnsign{
+.btnsignup{
     width: 150px;
     height: 45px;
     border-radius: 45px;
     cursor: pointer;
     border: none;
-    text-decoration: upp;
+    text-decoration: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3 ease;
+}
+.btnsignup:hover{
+    background: #000;
+    transform: translate(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 /*Responsive NavBar*/
