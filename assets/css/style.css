@@ -17,14 +17,13 @@ body{
 }
 /*NavBar*/
 nav{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     height: 70px;
-    background: #00DFAE;
-    border-radius: 0px 0px 5px 5px;
+    background: transparent;
     /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);*/
     z-index: 99;
 }
@@ -86,7 +85,8 @@ nav .navbar .links li .sub-menu{
     top: 70px;
     left: 0;
     line-height: 40px;
-    background: #00DFAE;
+    /*linear-gradient( to right, #00b9b9, #00dfae );*/
+    background: #00b9b9;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
     display: none;
@@ -165,7 +165,7 @@ nav .navbar .nav-links{
     display: block;
     max-width: 270px;
     width: 100%;
-    background:  #00DFAE;
+    background: linear-gradient( to left, #00b9b9, #00dfae );
     line-height: 40px;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -230,11 +230,54 @@ nav .navbar .links li:hover .js-sub-menu{
 /*Features*/
 .celularmeio{
     position: absolute;    
-    margin-top: -54%;
+    margin-top: -52%;
     right: 4px;
+}
+.text-middle h1{
+    position: absolute;
+    width: 650px;
+    height: 170px;
+    font-size: 60px;
+    top: 30%;
+    left: 15%;
+    z-index: 10;
+    color: #000;
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.text-middle h2{
+    position: absolute;
+    width: 1500px;
+    height: 200px;
+    font-size: 35px;
+    top: 97%;
+    left: 5%;
+    z-index: 10;
+    color: #000;
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.text-middle p{
+    position: absolute;
+    width: 600px;
+    height: 170px;
+    font-size: 20px;
+    top: 48%;
+    left: 16.2%;
+    z-index: 10;
+    color: #000;
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .features{
     position: relative;
+    margin-top: 10%;
     right: -8%;
     width: 300px;
     height: 420px;
@@ -244,7 +287,6 @@ nav .navbar .links li:hover .js-sub-menu{
     display: inline-block;
     vertical-align: top;
     margin-left: 4%;
-    
 }
 .features:hover{
     transform: translateY(-15px);
@@ -291,7 +333,8 @@ nav .navbar .links li:hover .js-sub-menu{
 
 /*Footer*/
 .footer__container {
-    background-color: #00DFAE;
+    background-image: linear-gradient( to right, #00b9b9, #00dfae ); 
+    /*background-color: #00DFAE;*/
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
