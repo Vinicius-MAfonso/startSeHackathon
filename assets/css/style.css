@@ -364,14 +364,15 @@ nav .navbar .links li:hover .js-sub-menu{
 @media screen and (max-width: 480px) {
     .text-middle h1{
         font-size: 45px;
-        width: 320px;
+        width: 435px;
         height: 100px;
+        left: 35px;
     }
     .text-middle p{
         font-size: 18px;
         width: 350px;
-        left: 78px;
-        height: 230px;       
+        left: 45px;
+        height: 200px;       
     }
     .celularmeio{
         max-width: 0%;
@@ -383,6 +384,10 @@ nav .navbar .links li:hover .js-sub-menu{
         font-size: 30px;
         width: 430px;
         height: 800px;
+        margin-top: -45%;
+    }
+    .features{
+        transform: translateY(300px) ;
     }
 }
 
@@ -499,9 +504,12 @@ nav .navbar .links li:hover .js-sub-menu{
 }
   
 @media screen and (max-width: 480px) {
+    .footer__container {
+        margin-top: 100%;
+    }
     .footer__link--items {
-      margin: 0;
-      padding: 10px;
-      width: 100%;
+        margin: 0;
+        padding: 10px;
+        width: 100%;
     }
 }
