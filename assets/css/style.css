@@ -1,4 +1,3 @@
-/* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
@@ -12,6 +11,7 @@ header{
 }
 body{
     min-height: 100vh;
+    max-width: 100%;
     background: url(../images/background-header.png);
     background-repeat: no-repeat;
 }
@@ -113,10 +113,12 @@ nav .navbar .links li:hover .js-sub-menu{
 }
 .btnsignup{
     background-color: transparent;
-    width: 150px;
-    height: 45px;
+    width: 155px;
+    height: 48px;
+    margin-left: -117%;
+    margin-top: 142%;
     border-radius: 45px;
-    font-size: 15px;
+    font-size: 16.5px;
     font-weight: 500;
     cursor: pointer;
     /* border: none; */
@@ -125,7 +127,7 @@ nav .navbar .links li:hover .js-sub-menu{
     /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); */
     transition: all 0.3 ease; 
     transition: 0.7s;
-    border: 2px solid transparent;
+    border: 2px solid #fff;
     color: white;
 }
 .btnsignup:hover{
@@ -228,10 +230,39 @@ nav .navbar .links li:hover .js-sub-menu{
 } 
 }
 /*Features*/
+.btnmiddle{
+    background-color: transparent;
+    width: 150px;
+    height: 45px;
+    border-radius: 45px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    /* border: none; */
+    text-decoration: uppercase;
+    letter-spacing: 2px;
+    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); */
+    transition: all 0.3 ease; 
+    transition: 0.7s;
+    border: 2px solid transparent;
+    color: white;
+}
+.btnmiddle:hover{
+    /* background: #005E4A;*/
+    transform: translate(-7px);
+    /*color: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); */
+    border: 2px solid white;
+}
 .celularmeio{
     position: absolute;    
     margin-top: -52%;
-    right: 4px;
+    right: 2.5px;
+}
+.dashboard{
+    position: absolute;    
+    margin-top: -52%;
+    right: 1px;
 }
 .text-middle h1{
     position: absolute;
@@ -249,10 +280,10 @@ nav .navbar .links li:hover .js-sub-menu{
 }
 .text-middle h2{
     position: absolute;
-    width: 1500px;
+    width: 1250px;
     height: 200px;
     font-size: 35px;
-    top: 97%;
+    top: 98%;
     left: 5%;
     z-index: 10;
     color: #000;
@@ -281,7 +312,7 @@ nav .navbar .links li:hover .js-sub-menu{
     right: -8%;
     width: 300px;
     height: 420px;
-    background-color: #00DFAE;
+    background-color: #00b9b9;
     transition: 0.3s;
     overflow: hidden;
     display: inline-block;
@@ -296,7 +327,7 @@ nav .navbar .links li:hover .js-sub-menu{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #00DFAE;
+    background-color: #00b9b9;
     width: 295px;
     height: 415px;
     z-index: 10;
@@ -330,10 +361,36 @@ nav .navbar .links li:hover .js-sub-menu{
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); */
     border: 2px solid #000;
 }
+@media screen and (max-width: 480px) {
+    .text-middle h1{
+        font-size: 45px;
+        width: 320px;
+        height: 100px;
+    }
+    .text-middle p{
+        font-size: 18px;
+        width: 350px;
+        left: 78px;
+        height: 230px;       
+    }
+    .celularmeio{
+        max-width: 0%;
+    }
+    .dashboard{
+        max-width: 0%;
+    }
+    .text-middle h2{
+        font-size: 30px;
+        width: 430px;
+        height: 800px;
+    }
+}
+
 
 /*Footer*/
 .footer__container {
     background-image: linear-gradient( to right, #00b9b9, #00dfae ); 
+    margin-top: 8%;
     /*background-color: #00DFAE;*/
     padding: 5rem 0;
     display: flex;
